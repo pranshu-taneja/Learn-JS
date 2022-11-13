@@ -1,0 +1,50 @@
+#object{
+    background-color: blue;    
+    width: 500px;
+    height: 500px;
+    border-radius: 30rem;  
+    position: relative;
+    right: -35vw;   
+}
+
+.circle {
+    background-color:pink ;    
+    width: 500px;
+    border-radius: 30rem;  
+    position: relative;
+    top: -30rem;
+    height: 500px;
+}
+
+.brown-circle{
+    background-color:rgb(31, 222, 50) ;    
+    width: 500px;
+    border-radius: 30rem;  
+    position: relative;
+    top: -30rem;
+    height: 500px;
+}
+
+.speechbubble{
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    background-color: cyan;
+    position: relative;
+    right: -70vw;
+    top: -100vh;
+    font-size: 30px;
+    text-align: center;
+}
+
+body{
+    background-color: gray;
+}
+
+p{
+    font-size: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+
