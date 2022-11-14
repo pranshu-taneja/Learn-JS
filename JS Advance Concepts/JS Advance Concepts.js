@@ -304,9 +304,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   */
   function async_await12() {
+    //https://www.programiz.com/javascript/promise    (READ ME MUST)
     const data_s = [
-      { name: "Pranshu", Roll_No: 1914355 },
-      { name: "Rahul", Roll_No: 1914359 },
+      { name: "Tomato", Roll_No: 1927662 },
+      { name: "Apple", Roll_No: 1914928 },
     ];
 
     function getdatas() {
@@ -321,7 +322,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function createdata(newdata) {
-      return new Promise((resolve, reject) => {
+      return new Promise((resolve, reject) => {   //mainly work on the core of resolve and reject
         setTimeout(() => {
           data_s.push(newdata);
 
@@ -349,7 +350,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //simple way handling of promise sent through fetch 
   function my_fetch_simple13(){
-    fetch("https://i.imgur.com/LaEYM5b.gif")
+    //https://www.programiz.com/javascript/promise    (READ ME MUST)
+    // THree states of promises -- fullfilled/resolved -- reject -- pending
+    
+    fetch("https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
     .then(response => {
       // console.log(response);  //This will only fail in network error
       console.log("Response received!!");
@@ -359,6 +363,9 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(blob => {
       console.log(blob);
     })
+    /* .then(()=>{        //uncomment to see it on page
+      document.getElementById("image").setAttribute('src',"https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    }) */
   }
 
 
@@ -407,7 +414,8 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   
   //Concept callback hell --> So basically when you use many nested callbacks then even a single one's failure will cause whole desturction and it is hard to understand the code like when >50 function with callbacks. This is called callback hell.
-  //WHat to do then--> To escape from this es6 provide async and await which handles promises i.e working asyncronously. Also it provides .catch for error handling. 
+
+  //WHat to do then--> To escape from this es6 provide async and await which handles promises i.e working asyncronously. Also it provides .catch for error handling. Don't use this many nested callback functions they will the code like shit readable and as well as buggy.
 
 
   /* 18 understanding the working of json  */
@@ -455,6 +463,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   //------------------- Write your task here -------------------
-  callback_understanding10()
+ 
   //------------------- Write your task here -------------------
 });
