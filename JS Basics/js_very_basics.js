@@ -86,6 +86,9 @@ function arrays8() {
   let arr = [1, 2, 3, 4];
   console.log(arr);
 
+
+  
+
   let str = [
     //arrays as containing multiple objects
     //so that means that associative array are not possible but we can acheive associativity behaviour thorugh objects in array
@@ -367,5 +370,6 @@ function nulltype17(){
 // The querySelectorAll() method returns a static NodeList.
 // The childNodes property returns a live NodeList.
 // Here live means that they automatically update the value with the sudden anytime updation of that element
+
 
 
